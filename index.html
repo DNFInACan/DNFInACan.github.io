@@ -7,6 +7,25 @@
 </style>
 </head>
 <body>
+  <audio id="hamgur">
+    <source src-"Hamburger Meme Sound Effect.mp3">
+  </audio>
+  
+  <script>
+    var x = document.getElementById("hamgur");
+    
+    function wait(ms)
+    {
+      var d = new Date();
+      var d2 = null;
+      do { d2 = new Date(); }
+      while(d2-d < ms);
+    }
+    
+    while wait(2250) {
+      x.play();
+    }
+  </script>
   <center><img src="hamburger.jpg" width="420" hight="420"></center>
 </body>
 </html>
