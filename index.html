@@ -19,11 +19,12 @@ function myLoop () {
    setTimeout(function () {   
       x.play();          
       i++;                     
-      if (i < 10) {           
+      if (i < 100000000) {           
          myLoop();             
       }                        
    }, 3000)
 }
+    myLoop();
   </script>
   <center><img src="hamburger.jpg" width="420" hight="420"></center>
 </body>
