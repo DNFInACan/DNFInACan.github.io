@@ -8,23 +8,22 @@
 </head>
 <body>
   <audio id="hamgur">
-    <source src-"Hamburger Meme Sound Effect.mp3">
+    <source src-"Hamburger Meme Sound Effect.mp3" type="audio/mpeg">
   </audio>
   
   <script>
-    var x = document.getElementById("hamgur");
-    
-    function wait(ms)
-    {
-      var d = new Date();
-      var d2 = null;
-      do { d2 = new Date(); }
-      while(d2-d < ms);
-    }
-    
-    while wait(2250) {
-      x.play();
-    }
+    var x = document.getElementById("hamgur"); 
+    var i = 1;                    
+
+function myLoop () {           
+   setTimeout(function () {   
+      x.play();          
+      i++;                     
+      if (i < 10) {           
+         myLoop();             
+      }                        
+   }, 3000)
+}
   </script>
   <center><img src="hamburger.jpg" width="420" hight="420"></center>
 </body>
